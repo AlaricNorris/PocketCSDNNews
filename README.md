@@ -1,3 +1,5 @@
-# PocketCSDNNews
-Mini CSDN News App
-Test Read Me
+# Pocket CSDN News
+##Mini CSDN News App
+
+######This App is a light version of CSDN News!
+
