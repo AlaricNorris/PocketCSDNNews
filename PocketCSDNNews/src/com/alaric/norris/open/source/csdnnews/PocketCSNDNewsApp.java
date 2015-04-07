@@ -7,17 +7,17 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration ;
  * 上下文类
  * @author Zack White
  */
-public class CSDN extends Application {
-	private static CSDN instance;
+public class PocketCSNDNewsApp extends Application {
+	private static PocketCSNDNewsApp instance;
 
 	/**
 	 * 获取Application
 	 * 
 	 * @return CSDN
 	 */
-	public static CSDN getInstance() {
+	public static PocketCSNDNewsApp getInstance() {
 		if (instance == null) {
-			instance = new CSDN();
+			instance = new PocketCSNDNewsApp();
 		}
 		return instance;
 	}
@@ -27,13 +27,13 @@ public class CSDN extends Application {
 	 * 
 	 * @return getInstance()
 	 */
-	public static CSDN getContext() {
+	public static PocketCSNDNewsApp getContext() {
 		return getInstance();
 	}
 
 	@Override
 	public void onCreate() {
-		synchronized (CSDN.class) {
+		synchronized (PocketCSNDNewsApp.class) {
 			instance = this;
 		}
 		super.onCreate();

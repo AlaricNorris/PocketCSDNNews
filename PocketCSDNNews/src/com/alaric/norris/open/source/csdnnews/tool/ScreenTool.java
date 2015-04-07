@@ -3,13 +3,13 @@ package com.alaric.norris.open.source.csdnnews.tool ;
 import android.content.Context ;
 import android.graphics.Point ;
 import android.view.WindowManager ;
-import com.alaric.norris.open.source.csdnnews.CSDN ;
+import com.alaric.norris.open.source.csdnnews.PocketCSNDNewsApp ;
 
 public class ScreenTool {
 
 	public static final Point outSize = new Point() ;
 	static {
-		((WindowManager) CSDN.getContext().getSystemService(Context.WINDOW_SERVICE))
+		((WindowManager) PocketCSNDNewsApp.getContext().getSystemService(Context.WINDOW_SERVICE))
 				.getDefaultDisplay().getSize(outSize) ;
 	}
 

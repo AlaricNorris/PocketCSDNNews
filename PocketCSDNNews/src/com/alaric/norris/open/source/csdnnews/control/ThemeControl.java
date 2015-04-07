@@ -2,7 +2,7 @@ package com.alaric.norris.open.source.csdnnews.control;
 
 import android.app.Activity ;
 import android.content.Intent ;
-import com.alaric.norris.open.source.csdnnews.CSDN ;
+import com.alaric.norris.open.source.csdnnews.PocketCSNDNewsApp ;
 import com.alaric.norris.open.source.csdnnews.R ;
 import com.alaric.norris.open.source.csdnnews.util.PreferenceUtil ;
 
@@ -13,7 +13,7 @@ public class ThemeControl {
 	public final static int THEME_NIGHT = 1;
 	
 	static {
-		mTheme = PreferenceUtil.readInt(CSDN.getContext(), SharedPreferencesConstant.CONFIG, "theme");
+		mTheme = PreferenceUtil.readInt(PocketCSNDNewsApp.getContext(), SharedPreferencesConstant.CONFIG, "theme");
 	}
 
 	/**

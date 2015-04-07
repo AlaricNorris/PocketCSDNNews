@@ -10,7 +10,7 @@ import android.widget.AdapterView ;
 import android.widget.AdapterView.OnItemClickListener ;
 import android.widget.ProgressBar ;
 import android.widget.Toast ;
-import com.alaric.norris.open.source.csdnnews.CSDN ;
+import com.alaric.norris.open.source.csdnnews.PocketCSNDNewsApp ;
 import com.alaric.norris.open.source.csdnnews.R ;
 import com.alaric.norris.open.source.csdnnews.adapter.InfoContentAdapter ;
 import com.alaric.norris.open.source.csdnnews.control.ThemeControl ;
@@ -89,7 +89,7 @@ public class InfoContentActivity extends BaseActivity {
 				LogTool.e(tag, "LoadDataTask,dataList.size() = " + dataList.size());
 			} catch (Exception e) {
 				Looper.prepare();
-				Toast.makeText(CSDN.getContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
+				Toast.makeText(PocketCSNDNewsApp.getContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
 				Looper.loop();
 			}
 			return null;
